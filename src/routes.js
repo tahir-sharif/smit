@@ -23,8 +23,8 @@ const MRoutes = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/" element={<MainLayout />}>
-          <Route path="/view-courses" element={<ViewCourses />} />
           <Route index element={<HomePage />} />
+          <Route path="/view-courses" element={<ViewCourses />} />
         </Route>
         <Route
           path="/admin"
