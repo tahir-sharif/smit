@@ -146,7 +146,7 @@ const authSlice = createSlice({
     logout: (state) => {
       cookie.remove("user");
       state.isLoggedIn = false;
-      window.location.pathname = "/";
+      window.location.pathname = "/smit";
       state.user = {};
     },
     adminLogout: (state) => {

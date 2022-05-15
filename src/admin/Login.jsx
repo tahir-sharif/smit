@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import {
   Box,
   Button,
@@ -26,7 +26,7 @@ const Login = () => {
   const loginCompleted = status === "fulfilled" && statusValid;
   if (loginCompleted) {
     setTimeout(() => {
-      navigate("/admin");
+      navigate("/smit/admin");
     }, 800);
   }
 

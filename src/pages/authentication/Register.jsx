@@ -35,7 +35,7 @@ const Register = () => {
   useEffect(() => {
     if (requestCompleted) {
       dispatch(resetState());
-      navigate("/");
+      navigate("/smit");
     }
   }, [requestCompleted]);
 

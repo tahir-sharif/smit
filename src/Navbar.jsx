@@ -140,13 +140,13 @@ const Navbar = () => {
             <>
               <Box sx={{ flexGrow: 0 }}>
                 <Button
-                  onClick={() => navigate("/login")}
+                  onClick={() => navigate("/smit/login")}
                   sx={{ color: "white" }}
                 >
                   Login
                 </Button>
                 <Button
-                  onClick={() => navigate("/register")}
+                  onClick={() => navigate("/smit/register")}
                   sx={{ color: "white" }}
                 >
                   Signup

@@ -28,7 +28,7 @@ const Login = () => {
   const loginCompleted = loginStatus === "fulfilled" && statusValid;
   if (loginCompleted) {
     setTimeout(() => {
-      navigate("/");
+      navigate("/smit");
     }, 800);
   }
 

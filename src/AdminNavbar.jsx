@@ -26,14 +26,14 @@ const AdminNavbar = () => {
     {
       name: "Settings",
       onClick: () => {
-        navigate("/admin/settings");
+        navigate("/smit/admin/settings");
       },
     },
     {
       name: "Logout",
       onClick: () => {
         dispatch(adminLogout());
-        navigate("/admin");
+        navigate("/smit/admin");
       },
     },
   ];
@@ -145,13 +145,13 @@ const AdminNavbar = () => {
             <>
               <Box sx={{ flexGrow: 0 }}>
                 <Button
-                  onClick={() => navigate("/login")}
+                  onClick={() => navigate("/smit/login")}
                   sx={{ color: "white" }}
                 >
                   Login
                 </Button>
                 <Button
-                  onClick={() => navigate("/register")}
+                  onClick={() => navigate("/smit/register")}
                   sx={{ color: "white" }}
                 >
                   Signup

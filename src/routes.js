@@ -20,22 +20,27 @@ const MRoutes = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/" element={<MainLayout />}>
+        <Route path="/" element={<Navigate to="/smit" />} />
+        <Route path="/smit/login" element={<Login />} />
+        <Route path="/smit/register" element={<Register />} />
+        <Route path="/smit/" element={<MainLayout />}>
           <Route index element={<HomePage />} />
-          <Route path="/view-courses" element={<ViewCourses />} />
+          <Route path="view-courses" element={<ViewCourses />} />
         </Route>
         <Route
-          path="/admin"
+          path="/smit/admin"
           element={
-            isAdminLoaggedIn ? <AdminLayout /> : <Navigate to="/admin/login" />
+            isAdminLoaggedIn ? (
+              <AdminLayout />
+            ) : (
+              <Navigate to="/smit/admin/login" />
+            )
           }
         >
           <Route index element={<AdminHomePage />} />
           <Route path="settings" element={<Settings />} />
         </Route>
-        <Route path="/admin/login" element={<AdminLogin />} />
+        <Route path="/smit/admin/login" element={<AdminLogin />} />
         <Route path="*" element={<h1>404 not Found</h1>} />
       </Routes>
     </BrowserRouter>
